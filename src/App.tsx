@@ -1,5 +1,14 @@
+import { MantineProvider } from '@mantine/core'
+import MainLayout from './layouts/MainLayout'
+
 const App = () => {
-    return <div>App</div>
+    return (
+        <MantineProvider
+            withGlobalStyles
+            withNormalizeCSS>
+            <MainLayout />
+        </MantineProvider>
+    )
 }
 
 export default App
