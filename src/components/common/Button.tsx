@@ -1,9 +1,7 @@
-import React from 'react'
+import { Button } from '@mantine/core'
 
-const Button = () => {
-  return (
-    <div>Button</div>
-  )
+const AppButton = (props: any) => {
+    return <Button {...props} />
 }
 
-export default Button
+export default AppButton

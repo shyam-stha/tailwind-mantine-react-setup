@@ -1,9 +1,33 @@
-import React from 'react'
+import logoWhite from '../../assets/images/logo_white.svg'
+import logoBlack from '../../assets/images/logo_black.svg'
+import logoColored from '../../assets/images/logo_colored.svg'
 
-const Logo = () => {
-  return (
-    <div>Logo</div>
-  )
+const Logo = ({ type, ...props }: any) => {
+    if (type == 'white') {
+        return (
+            <img
+                src={logoWhite}
+                alt='City Tours'
+                {...props}
+            />
+        )
+    } else if (type == 'black') {
+        return (
+            <img
+                src={logoBlack}
+                alt='City Tours'
+                {...props}
+            />
+        )
+    } else {
+        return (
+            <img
+                src={logoColored}
+                alt='City Tours'
+                {...props}
+            />
+        )
+    }
 }
 
 export default Logo

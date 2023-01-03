@@ -1,4 +1,4 @@
-import { MantineProvider } from '@mantine/core'
+import { Button, MantineProvider } from '@mantine/core'
 import MainLayout from './layouts/MainLayout'
 
 const App = () => {

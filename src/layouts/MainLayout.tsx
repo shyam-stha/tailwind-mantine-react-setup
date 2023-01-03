@@ -1,9 +1,11 @@
-import React from 'react'
+import LandingPage from '../pages/LandingPage'
 
 const MainLayout = () => {
-  return (
-    <div>MainLayout</div>
-  )
+    return (
+        <div className=''>
+            <LandingPage />
+        </div>
+    )
 }
 
 export default MainLayout
